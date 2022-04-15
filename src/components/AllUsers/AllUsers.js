@@ -45,7 +45,7 @@ function AllUsers() {
                     <td>{u?.name ? u.name : null} </td>
                     <td>{u?.email ? u.email : null}</td>
                     <td>{(moment(u.subExpirationDate).isAfter(new Date())) === true ? 'Premium' : 'Free'}</td>
-                    <td>{moment(u.expirationDate).format('DD/MM/YYYY')}</td>
+                    <td>{moment(u.subExpirationDate).format('DD/MM/YYYY')}</td>
                   </tr>
                 ))}
               </tbody>
